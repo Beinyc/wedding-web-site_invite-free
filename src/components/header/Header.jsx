@@ -3,6 +3,7 @@ import "./Header.css";
 
 import headerImage from "../../images/ryki.jpg";
 import backgroundImage from '../../images/white.jpg'
+import lineImage from '../../images/header__line.jpg'
 
 export default function Header(props) {
   const calculateTimeLeft = () => {
@@ -68,6 +69,7 @@ export default function Header(props) {
                 <span className="header-timer-label">Секунд</span>
             </div>
         </div>
+        <img className='header-line__image' src={lineImage} alt="иконка линий границ блока" />
       </div>
     </div>
   );
