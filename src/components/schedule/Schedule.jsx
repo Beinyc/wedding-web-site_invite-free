@@ -74,7 +74,7 @@ export default function Schedule() {
         <div ref={cardRefs[4]} className={`schedule__card-flex ${isVisible.cards[4] ? 'visible' : ''}`}>
           <p className="schedule__time">22:00</p>
           <div className="schedule__cart">
-            <p className="schedule__paragraph">Фейрверк</p>
+            <p className="schedule__paragraph">Фейерверк</p>
           </div>
         </div>
         <div className="schedule__map">
