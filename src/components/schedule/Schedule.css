@@ -63,16 +63,28 @@
 }
 
 .schedule__map {
-    border: 0;
-    width: 800px;
-    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
 
-@media( max-width:830px) {
+.schedule__map iframe {
+    border: 0;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* @media( max-width:830px) {
     .schedule__map {
         width: 720px;
     }
-}
+} */
 
 @media( max-width:720px) {
     .schedule__title {

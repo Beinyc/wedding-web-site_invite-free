@@ -39,7 +39,9 @@ export default function Schedule() {
             <p className="schedule__paragraph">Фейрверк</p>
           </div>
         </div>
-        <iframe className="schedule__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa739f21d0297e00fbee10804c9a3a16cb4d169836d0944c94043cb133ce794b9&amp;source=constructor"></iframe>
+        <div className="schedule__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa739f21d0297e00fbee10804c9a3a16cb4d169836d0944c94043cb133ce794b9&amp;source=constructor"></iframe>
+        </div>
       </div>
     </div>
   );
