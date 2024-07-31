@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7654440b.css",
-    "main.js": "/static/js/main.08c648b0.js",
-    "static/media/background-image.jpg": "/static/media/background-image.aeb6790e5f4bbd508a05.jpg",
-    "static/media/white.jpg": "/static/media/white.522c7c29aabdeceeebe7.jpg",
-    "static/media/main__pair.jpg": "/static/media/main__pair.b5a95d29a4c715362f17.jpg",
-    "static/media/header__line.jpg": "/static/media/header__line.66387931137e2c8b30f5.jpg",
-    "static/media/main__bride.jpg": "/static/media/main__bride.a917f9f6493e88d83f46.jpg",
-    "static/media/main__groom.jpg": "/static/media/main__groom.228ed3b6acd13bb5d053.jpg",
-    "static/media/ryki.jpg": "/static/media/ryki.315893a98856383fd3a4.jpg",
-    "static/media/company.jpg": "/static/media/company.7e61ad695694d92f708e.jpg",
-    "index.html": "/index.html",
-    "main.7654440b.css.map": "/static/css/main.7654440b.css.map",
-    "main.08c648b0.js.map": "/static/js/main.08c648b0.js.map"
+    "main.css": "/wedding-web-site_invite-free/static/css/main.57f6dd78.css",
+    "main.js": "/wedding-web-site_invite-free/static/js/main.c9081750.js",
+    "static/media/background-image.jpg": "/wedding-web-site_invite-free/static/media/background-image.aeb6790e5f4bbd508a05.jpg",
+    "static/media/white.jpg": "/wedding-web-site_invite-free/static/media/white.522c7c29aabdeceeebe7.jpg",
+    "static/media/main__pair.jpg": "/wedding-web-site_invite-free/static/media/main__pair.b5a95d29a4c715362f17.jpg",
+    "static/media/header__line.jpg": "/wedding-web-site_invite-free/static/media/header__line.66387931137e2c8b30f5.jpg",
+    "static/media/main__bride.jpg": "/wedding-web-site_invite-free/static/media/main__bride.a917f9f6493e88d83f46.jpg",
+    "static/media/main__groom.jpg": "/wedding-web-site_invite-free/static/media/main__groom.228ed3b6acd13bb5d053.jpg",
+    "static/media/ryki.jpg": "/wedding-web-site_invite-free/static/media/ryki.315893a98856383fd3a4.jpg",
+    "static/media/company.jpg": "/wedding-web-site_invite-free/static/media/company.7e61ad695694d92f708e.jpg",
+    "index.html": "/wedding-web-site_invite-free/index.html",
+    "main.57f6dd78.css.map": "/wedding-web-site_invite-free/static/css/main.57f6dd78.css.map",
+    "main.c9081750.js.map": "/wedding-web-site_invite-free/static/js/main.c9081750.js.map"
   },
   "entrypoints": [
-    "static/css/main.7654440b.css",
-    "static/js/main.08c648b0.js"
+    "static/css/main.57f6dd78.css",
+    "static/js/main.c9081750.js"
   ]
 }
