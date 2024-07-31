@@ -1,4 +1,5 @@
 import './App.css';
+import Company from './components/company/company';
 
 import Header from './components/header/Header';
 import Main from './components/main/Main';
@@ -12,6 +13,7 @@ function App() {
       <Main/>
       <Menu/>
       <Schedule/>
+      <Company/>
     </div>
   );
 }

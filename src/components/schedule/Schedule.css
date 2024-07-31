@@ -55,7 +55,7 @@
 .schedule__time {
     margin: 0;
     padding: 0;
-    margin-right: 25px;
+    margin-right: 105px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
     font-size: 30px;
@@ -89,6 +89,12 @@
 @media( max-width:720px) {
     .schedule__title {
         font-size: 45px;
+    }
+}
+
+@media( max-width:580px) {
+    .schedule__time {
+        margin-right: 20px;
     }
 }
 
