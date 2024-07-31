@@ -1,5 +1,5 @@
 .schedule {
-    background-image: url(../../images/background-image.jpg) ;
+    background-image: url(../../images/background-image.jpg);
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
@@ -17,12 +17,18 @@
     font-size: 59px;
     font-weight: 200;
     z-index: 50;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 4s ease-out, transform 4s ease-out;
 }
 
 .schedule__card-flex {
     margin-top: 25px;
     display: flex;
     justify-content: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 4s ease-out, transform 4s ease-out;
 }
 
 .schedule__cart {
@@ -65,46 +71,46 @@
 .schedule__map {
     margin-top: 25px;
     margin-bottom: 25px;
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
 .schedule__map iframe {
     border: 0;
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
-/* @media( max-width:830px) {
-    .schedule__map {
-        width: 720px;
-    }
-} */
+.schedule__title.visible,
+.schedule__card-flex.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-@media( max-width:720px) {
+@media (max-width: 720px) {
     .schedule__title {
         font-size: 45px;
     }
 }
 
-@media( max-width:580px) {
+@media (max-width: 580px) {
     .schedule__time {
         margin-right: 20px;
     }
 }
 
-@media( max-width:450px) {
+@media (max-width: 450px) {
     .schedule__title {
         font-size: 32px;
     }
 
     .schedule__paragraph {
-        font-size: 25px
+        font-size: 25px;
     }
 
     .schedule__paragraph-down {

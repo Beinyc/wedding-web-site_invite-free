@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import "./Header.css";
 
 import headerImage from "../../images/ryki.jpg";
-import backgroundImage from '../../images/white.jpg'
-import lineImage from '../../images/header__line.jpg'
+import backgroundImage from '../../images/white.jpg';
+import lineImage from '../../images/header__line.jpg';
 
 export default function Header(props) {
   const calculateTimeLeft = () => {
@@ -26,6 +26,7 @@ export default function Header(props) {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,12 +36,16 @@ export default function Header(props) {
     return () => clearTimeout(timer);
   });
 
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const timerStyle = {
     backgroundImage: `url(${backgroundImage})`,
   };
 
   return (
-    <div className='header'>
+    <div className={`header ${isVisible ? 'header--visible' : ''}`}>
       <div className='header__width'>
         <img className='header__image' src={headerImage} alt="изображение рук" />
         <h1 className='header__title'>
@@ -52,22 +57,22 @@ export default function Header(props) {
         </h1>
         <p className='header__paragraph'>26 декабря 2024</p>
         <div className="header__timer" style={timerStyle}>
-            <div className="header-timer-segment">
-                <span className="header-timer-number">{timeLeft.days || '0'}</span>
-                <span className="header-timer-label">Дней</span>
-            </div>
-            <div className="header-timer-segment">
-                <span className="header-timer-number">{timeLeft.hours || '0'}</span>
-                <span className="header-timer-label">Часов</span>
-            </div>
-            <div className="header-timer-segment">
-                <span className="header-timer-number">{timeLeft.minutes || '0'}</span>
-                <span className="header-timer-label">Минут</span>
-            </div>
-            <div className="header-timer-segment">
-                <span className="header-timer-number">{timeLeft.seconds || '0'}</span>
-                <span className="header-timer-label">Секунд</span>
-            </div>
+          <div className="header-timer-segment">
+            <span className="header-timer-number">{timeLeft.days || '0'}</span>
+            <span className="header-timer-label">Дней</span>
+          </div>
+          <div className="header-timer-segment">
+            <span className="header-timer-number">{timeLeft.hours || '0'}</span>
+            <span className="header-timer-label">Часов</span>
+          </div>
+          <div className="header-timer-segment">
+            <span className="header-timer-number">{timeLeft.minutes || '0'}</span>
+            <span className="header-timer-label">Минут</span>
+          </div>
+          <div className="header-timer-segment">
+            <span className="header-timer-number">{timeLeft.seconds || '0'}</span>
+            <span className="header-timer-label">Секунд</span>
+          </div>
         </div>
         <img className='header-line__image' src={lineImage} alt="иконка линий границ блока" />
       </div>
